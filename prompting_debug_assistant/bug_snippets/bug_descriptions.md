@@ -1,7 +1,19 @@
+# Bug Descriptions
+
+## Summary
+This document provides an analysis of the bugs present in the code snippets.
+*   **bug1.py**: Issues with mutable default arguments in Python.
+*   **bug2.c**: Buffer overflow vulnerability in C.
+*   **bug3.js**: Variable scope and closure issues in JavaScript.
+*   **bug4.java**: Incorrect string comparison using reference equality in Java.
+*   **bug5.cpp**: Memory leak due to missing deallocation in C++.
+*   **bug6.sh**: Syntax error in variable assignment in Bash.
+
 ## Bug 1 – bug1.py
 **Intended Behavior**: The function should add a task to a provided list, or create a new list with the task if no list is provided.
 **Issue Type**: Mutable Default Argument.
 **Notes**: In Python, default arguments are evaluated only once at definition time. The list `[]` is created once and reused for all calls that don't specify a `task_list`, causing the list to grow unexpectedly across calls.
+
 
 ## Bug 2 – bug2.c
 **Intended Behavior**: Copy a user input string into a local buffer for processing.
